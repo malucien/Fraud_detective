@@ -4,6 +4,9 @@ from sklearn.metrics import accuracy_score
         # Import your fraud detection model code
 from fraud_detection_model import predict_fraud
 
+# Set up OpenAI API credentials
+openai.api_key = "YOUR_API_KEY"
+
 # Load the model
 clf = RandomForestClassifier(n_estimators=100, max_depth=10)
 
