@@ -1,10 +1,9 @@
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
-        # Import your fraud detection model code
-from fraud_detection_model import predict_fraud
 
-# Set up OpenAI API credentials
+
+# Set up OpenAI API key
 openai.api_key = "YOUR_API_KEY"
 
 # Load the model
