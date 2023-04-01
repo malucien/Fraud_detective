@@ -54,11 +54,12 @@ def process_transaction(transaction_data):
 
     # Analyze the prediction
     if y_pred[0] == 1 and y_prob[0][1] > 0.8:
-        # The model predicts that the transaction is fraudulent with high confidence
+        # The model predicts that the transaction is fraudulent
         # Take action based on the prediction (e.g. block the transaction and alert a human analyst)
         print('Fraudulent transaction detected:', transaction_data)
     else:
         # The model predicts that the transaction is not fraudulent
+        # Transaction is processed
         print('Legitimate')
 
 
